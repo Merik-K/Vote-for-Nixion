@@ -1,12 +1,18 @@
+@font-face {
+  font-family: Anton;
+  src: url(./font/Anton/Anton-Regular.ttf);
+}
 body {
   background-image: url(./images/50144229776_1189e0d9f6_b.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  color: white;
 }
 .title {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: Anton;
 }
 .header {
   background-image: url(./images/arizona-blog-header.jpg);
@@ -73,3 +79,29 @@ img {
   margin-left: -3px;
   top: 0;
 } */
+
+.box {
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  height: auto;
+  width: auto;
+  background-color: grey;
+  padding: 10rem;
+  position: absolute;
+  overflow: hidden;
+  opacity: 70%;
+}
+.congrats {
+  display: flex;
+  font-size: 100px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  margin: 0%;
+}

@@ -7,7 +7,7 @@
     <title>VOTE!</title>
     <link rel="stylesheet" href="index.css" />
   </head>
-  <body>
+  <body onload="()=>loadEvent()">
     <h1 class="title">1968 Election, Vote Here!</h1>
     <hr />
     <h2 id="hm">Please select your Canident</h2>
@@ -16,7 +16,12 @@
         <img src="./images/rn-portrait.jpg" alt="Nixon" />
         <br />
         <div class="Nixionbtn">
-          <input type="button" value="VOTE Nixon" class="Nixonbtn" />
+          <input
+            type="button"
+            value="VOTE Nixon"
+            class="Nixonbtn"
+            id="Nixonbtn"
+          />
         </div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
@@ -30,7 +35,14 @@
         <img src="./images/download.jpg" alt="McGovern" />
         <br />
         <div class="McGovernbtn">
-          <input type="button" value="VOTE McGovern" class="McGovernbtn" />
+          <button
+            type="button"
+            class="McGovernbtn"
+            id="McGovernbtn"
+            onclick="McGovern()"
+          >
+            VOTE McGovern
+          </button>
         </div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aspernatur
@@ -48,6 +60,12 @@
         optio reprehenderit, dignissimos harum sunt labore eos laboriosam culpa
         esse libero, ab aliquam.
       </p>
+    </div>
+    <div class="box">
+      <div class="congrats">
+        <p>Congratulations!</p>
+        <p>You have voted for Nixon!</p>
+      </div>
     </div>
     <script src="index.js"></script>
   </body>
