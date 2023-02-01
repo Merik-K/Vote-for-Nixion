@@ -92,6 +92,7 @@ img {
   position: absolute;
   overflow: hidden;
   opacity: 70%;
+  display: none;
 }
 .congrats {
   display: flex;
