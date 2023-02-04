@@ -8,6 +8,7 @@ let no = document.getElementById('no');
 let yess = 0;
 let noo = 0;
 let Nixonbtn2 = document.getElementById('Nixonbtn2');
+let eagle = document.getElementById('eagle');
 
 function doThis() {
   alert('Please choose wisely on who to vote for!');
@@ -17,6 +18,7 @@ Nixon.addEventListener('click', NixonX);
 function NixonX() {
   if (count == 0) {
     win.style.display = 'initial';
+    McGovern.removeEventListener('click', McGovernM);
   }
 }
 
@@ -28,6 +30,9 @@ function McGovernM() {
     no.addEventListener('click', NoO);
   }
 }
+yes.addEventListener('contextmenu', (a) => {
+  a.preventDefault();
+});
 function YesS() {
   if (yess == 0) {
     lose.style.display = 'none';
@@ -36,10 +41,26 @@ function YesS() {
   Nixonbtn2.style.display = 'initial';
 }
 
+no.addEventListener('contextmenu', (a) => {
+  a.preventDefault();
+});
 function NoO() {
   if (yess == 0) {
     lose.style.display = 'none';
   }
   alert('Good Choice!');
   console.log('hello');
+}
+
+function Red(x) {
+  no.style.background = 'red';
+}
+
+function Blue(x) {
+  yes.style.background = 'blue';
+}
+
+function normal(x) {
+  yes.style.background = 'none';
+  no.style.background = 'none';
 }

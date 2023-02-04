@@ -75,7 +75,7 @@ img {
   width: 250px;
   height: 50px;
   border-radius: 10px;
-  right: 37px;
+  right: 273px;
   position: absolute;
   display: none;
 }
@@ -130,6 +130,7 @@ p {
   border-radius: 20%;
   width: 95px;
   height: 65px;
+  cursor: url('./images/This_is_a_picture_of_yes!.png');
 }
 #no {
   border-radius: 20%;
