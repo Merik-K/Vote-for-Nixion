@@ -39,6 +39,7 @@ function YesS() {
   }
   console.log('hello');
   Nixonbtn2.style.display = 'initial';
+  document.removeEventListener('no');
 }
 
 no.addEventListener('contextmenu', (a) => {
@@ -50,6 +51,7 @@ function NoO() {
   }
   alert('Good Choice!');
   console.log('hello');
+  document.removeEventListener('yes');
 }
 
 function Red(x) {
