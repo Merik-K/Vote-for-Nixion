@@ -66,3 +66,24 @@ function normal(x) {
   yes.style.background = 'none';
   no.style.background = 'none';
 }
+
+body.onclick = function (event) {
+  //window-relative field coordinates
+  let Webcords = this.getBoundingClientRect();
+  //the ball has position: absolute, the field: position: relative
+  // so ball coordinates are relatice to the firld inner left-upper corner
+  let Eaglecords = {
+    top:
+      event.clientY -
+      Webcords.top -
+      body.clientTop -
+      eagleimg.clientHeight / 2 -
+      10,
+    left:
+      event.clientX -
+      Webcords.left -
+      body.clientLeft -
+      eagleimg.clientWidth / 2 -
+      7,
+  };
+};
